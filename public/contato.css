@@ -229,8 +229,33 @@ button:hover {
 
 }
 
+/*configurando iframe localização */
+
+.iframe-localization{
+  width: 60vw;
+  height: 70vh;
+  margin: 1.0rem;
+  text-align: left;
+  position: relative;
+  margin-left: 25%;
+ 
+}
+
+
+.iframe-localization h1{
+  font-family: Merriweather, sans-serif;
+
+}
+
+.iframe-localization p {
+  margin-top: 0.8rem;
+  font-size: 20px;
+}
+
+
 iframe {
-  margin-top: 60px;
-  margin-left: 30%; 
-  
+  position: absolute;
+  width: 60vw; 
+  height: 50vh;
+
 }

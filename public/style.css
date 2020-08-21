@@ -35,8 +35,8 @@ header .primary-nav{
 }
 
 #img-logo{
-    width: 200px;
-    height: 35px;
+    width: 15.2rem;
+    height: 15.6rem;
     
 }
 
@@ -91,9 +91,10 @@ main .primary-main{
 
 main .primary-content{
     position: relative;
-    height: 50vh;
+    height: 21.6rem;
     top: 10%;
     color: black;
+    
 
        
     
@@ -105,7 +106,7 @@ main .primary-content h1{
     display: block;
     position: relative;
     left: 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: black;
     
 
@@ -143,11 +144,6 @@ main .primary-image img{
     
 }
     
-    
-
-
-
-
 
 
 main .primary-main{
@@ -172,8 +168,8 @@ main .primary-main{
 }
 
 main .primary-content a{
-    width: 230px;
-    height: 50px;
+    width: 15.9rem;
+    height: 3.6rem;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     font-weight: 600;
@@ -220,13 +216,6 @@ main .primary-main a:hover{
     
 }
 
-
-.content-secundary span{
-    display: block;
-    right: 48%;
-    width: 50px;
-    position: absolute;
-}
 
 
 
@@ -471,4 +460,32 @@ color: #E49C15;
     width: 80px;
     height: auto;
     margin: 5px;
+}
+
+/***COMEÇANDO FOOTER ****/
+
+footer{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.993);
+    position: relative;
+    text-align: center;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+
+
+.footer-icon img {
+    width: 15.6rem;
+    height: 12.6rem;
+    position: absolute;
+    margin-bottom: 9.6rem;
+    
+
 }

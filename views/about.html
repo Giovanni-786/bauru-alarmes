@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bauru Alarmes</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
+{% extends "layout.html" %}
 
-    <header>
-        <nav class="primary-nav">
-
-                
-                    <img src="/Images/Logo-bauru-alarmespng.png" alt="Bauru alarmes" id="img-logo">
-                
-                 
-                <a href="/">Íniciosss</a>
-                <a href="">Serralheria</a>
-                <a href="">Clientes</a>
-                <a href="/contato">Contatos</a>
-        </nav>
-    </header>
+{% block content %}
 
     <main>
 
@@ -37,13 +17,10 @@
 
         <div class="primary-image">
 
-            <img src="/Images/capa-bauru-alarmes.png" alt="">
-
+            <img src="/Images/capa-bauru-alarmes.svg" alt="capa-bauru-alarmes">
 
         </div>
 
-
-        
     </div>
 
     </main>
@@ -59,7 +36,7 @@
         <div class="content-secundary-text">
             <h2>Contamos com uma Central de Monitoramento Eletrônico 24h altamente estruturada</br> 
            Geradores de energia, nobreaks e backup de equipamentos para o monitoramento</br> Além de linhas digitais para recepcionar os sinais dos sistemas de segurança de nossos clientes.</h2>
-           <span><img src="/Images/lock-24px.svg" alt=""></span>
+        
         </div>
         
         <div class="content-secundary-image-1">
@@ -230,11 +207,28 @@
 
     </div>
 
+{% endblock %}
 
 
+{% block footer %} 
 
-    
-<script src="/index.js"></script>
-    
-</body>
-</html>
+<footer>
+    <div class="footer-main">
+        <div class="footer-icon">
+            <img src="/Images/capa-bauru-alarmes.png" alt="logo Bauru Alarmes">
+        </div>
+        <div class="footer-items">
+            <a href="">
+                <img src="/icons/whatsapp.svg" alt="whatsapp">
+            </a>
+            <a href="">
+                <img src="" alt="">
+            </a>
+
+        </div>
+
+    </div>
+</footer>
+
+
+{% endblock %}

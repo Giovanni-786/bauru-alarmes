@@ -24,12 +24,18 @@ server.use(bodyParser.json())
 
 
 server.get("/", function(req, res){
-    return res.render("index")
+    return res.render("about")
 
 });
 
 server.get("/contato", function(req, res){
     return res.render("contato")
+
+});
+
+
+server.get("/serralheria", function(req, res){
+    return res.render("serralheria")
 
 });
 
