@@ -466,26 +466,26 @@ color: #E49C15;
 
 footer{
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
     background-color: rgba(255, 255, 255, 0.993);
-    position: relative;
     text-align: center;
-}
-
-.footer-main {
-    display: flex;
+    display: grid;
     align-items: center;
-    text-align: center;
     align-self: center;
 }
 
 
-
-.footer-icon img {
-    width: 15.6rem;
-    height: 12.6rem;
-    position: absolute;
-    margin-bottom: 9.6rem;
-    
-
+footer p {
+    font-weight: 700;
 }
+.footer-icon img{
+    width: 20.5rem;
+    
+}
+
+.footer-items img{
+    width: 5.6rem;
+    height: 3.6rem;
+}
+
+
