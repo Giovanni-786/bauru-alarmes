@@ -462,45 +462,20 @@ color: #E49C15;
     margin: 5px;
 }
 
-/***COMEÇANDO FOOTER ****/
 
 
+/****CONFIGURANDO RESPONSIVIDADE ****/
 
-footer{
-    width: 100%;
-    height: 50vh;
-    background-color: rgba(255, 255, 255, 0.993);
-    text-align: center;
-    display: grid;
-    align-items: center;
-    align-self: center;
-    border: 1px solid red;
+@media (max-width: 900px){
+
     
-    
-}
-
-
-footer p {
-    font-weight: 700;
-}
-
-
-.footer-main {
-    margin: 15.6rem;
- 
-}
-
-
-.footer-icon img{
-    width: 15.5rem;
+#img-logo{
+    width: 15.2rem;
+    height: 15.6rem;
+    display: block;
+    margin-left: 50%;
+    position: relative;
     
 }
 
-.footer-items img{
-    width: 3.6rem;
-    height: 2.6rem;
 }
-
-
-
-
