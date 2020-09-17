@@ -15,7 +15,10 @@ server.use(express.static('public'))
 server.set("view engine", "html")
 
 nunjucks.configure("views", {
-    express: server
+    express: server,
+    autoEscape: false,
+    noCache: true
+
 })
 
 //Config body parser

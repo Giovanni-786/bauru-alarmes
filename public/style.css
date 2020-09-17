@@ -29,6 +29,8 @@ header .primary-nav{
     display: flex;
     background-color:  #fff;
     align-items: center;
+    width: 100vw;
+
     
     
 
@@ -106,7 +108,7 @@ main .primary-content h1{
     display: block;
     position: relative;
     left: 0;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     color: black;
     
 
@@ -128,7 +130,7 @@ main .primary-image {
     margin: 20px;
     text-align: right;
     position: relative;
-
+    padding: 10%;
     
 }
 
@@ -137,8 +139,8 @@ main .primary-image {
 main .primary-image img{
     max-width: 350px;
     height: auto;
-    position: relative;
-    left: 100px;
+    position: absolute;
+    margin: -5vh auto;
 
 
     
@@ -147,7 +149,7 @@ main .primary-image img{
 
 
 main .primary-main{
-    margin-bottom: 30px;
+
     position: relative;
     
     
@@ -161,15 +163,15 @@ main .primary-main{
 .link-orc a {
     align-self: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 10px;
     
 }
 
 main .primary-content a{
-    width: 15.9rem;
-    height: 3.6rem;
+    width: 13.9rem;
+    height: 2.8rem;
     font-size: 18px;
     font-family: Roboto, sans-serif;
     font-weight: 600;
@@ -267,7 +269,7 @@ main .primary-main a:hover{
 
 .context-title-3{
     margin: 20px;
-    max-width: 1200px;
+    width: 100%;
     text-align: left;
     top: 20%;
     justify-items: center;
@@ -466,16 +468,22 @@ color: #E49C15;
 
 /****CONFIGURANDO RESPONSIVIDADE ****/
 
-@media (max-width: 900px){
+@media (max-width: 700px){
+    #img-logo{
+        width: 150px;
+        height: 125px;
+        display: block;
+        margin-left: 50%;
+    }
+
+    .primary-image img {
+        width:  15.6rem;
+       
+    }
 
     
-#img-logo{
-    width: 15.2rem;
-    height: 15.6rem;
-    display: block;
-    margin-left: 50%;
-    position: relative;
-    
-}
 
+
+
+  
 }
