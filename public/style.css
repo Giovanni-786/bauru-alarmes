@@ -6,65 +6,161 @@
     margin: 0;
     padding: 0;
     bottom: 0;
+
+}
+
+
+/* Remover espaço em brando lateral no mobile */
+html, body{
+    overflow-x: hidden !important; 
 }
 
 
 body{
     font-family: Roboto, sans-serif;
+    position: relative;
 }
 
 header{
+    height: 10vh;
     width: 100%;  
+    padding: 1px 20px;
+    top:20px;
+    z-index: 999;
+    position: absolute;
 
+    
+    
 
 }
 
 header .primary-nav{
-    border: 2px solid  #f6f7f9;
-    padding: 20px;
+    max-width: 1200px;
+    margin: -15px auto;
     display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 6vh;
-    display: flex;
-    background-color:  #fff;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
-
+    padding: 0 20px;
     
+    
+   
     
 
 }
 
-#img-logo{
-    width: 15.2rem;
-    height: 15.6rem;
-    
-}
 
-header .primary-nav a {
-    margin: 10px;
-    text-decoration: none;
+header .menu a {
     color: black;
-    font-size: 20px;
-    transition: 300ms;
-    padding: 10px;
+    text-decoration: none;
     
     
 }
 
-header .primary-nav a:hover {
+header .menu a:hover {
     font-weight: 700;
+    color: black;
     
     
     
 }
 
-.primary-nav img{
-    display: block;
-    right: 20vw;
-    position: relative;
+.logo img {
+    width: 200px;
+    height: 20px;
 }
+
+
+
+.hamburguer{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+    right: 20px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+
+  
+  
+
+}
+
+.hamburguer img{
+    width: 40px;
+    height: 25px;
+    display: block;
+    margin-right: 70px;
+}
+
+.hamburguer:after{
+    content: "";
+
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 5%;
+    border-radius: 5px;
+
+    background-color: #fff;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.menu li {
+    margin-left: 10px;
+  
+}
+
+
+.menu li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #555;
+
+}
+
+
+.menu li a:hover{
+font-weight: 700;
+transition: 400ms
+
+}
+
+@media screen and (max-width: 980px){
+    .hamburguer{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        right: -100%;
+
+        height: 100vh;
+        background-color: #222;
+        flex-direction: column;
+
+        padding: 50px 20px;
+        width: 100%;
+        max-width: 300px;
+
+        transition: 0.5s ease;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+}
+
 
 /****COMEÇANDO CONTEÚDO PRINCIPAL***/
 
@@ -72,20 +168,21 @@ main{
     background-color: white;
     height: 60vh;
     position: relative;
-    width: 100vw;
+    width: 100%;
+
     
     
 }
 
 main .primary-main{
-    text-align: left;
+    text-align: center;
     position: relative;
-    height: 50vh;
+    height: 70vh;
     position: absolute;
     margin-left: 20px;
     display: flex;
     color: black;
-
+    margin-top: 50px;
 
 
     
@@ -127,10 +224,11 @@ main .primary-content h3{
 
 
 main .primary-image {
-    margin: 20px;
-    text-align: right;
+    margin: 0 auto;
+    text-align: center;
     position: relative;
     padding: 10%;
+    
     
 }
 
@@ -138,9 +236,9 @@ main .primary-image {
 
 main .primary-image img{
     max-width: 350px;
-    height: auto;
+    height: 300px;
     position: absolute;
-    margin: -5vh auto;
+    margin: 20vh auto;
 
 
     
@@ -164,15 +262,15 @@ main .primary-main{
     align-self: center;
     align-items: center;
     position: absolute;
-    margin-top: 20px;
-    font-size: 10px;
+    margin-top: 10px;
+    font-size: 15px;
     
 }
 
 main .primary-content a{
     width: 13.9rem;
-    height: 2.8rem;
-    font-size: 18px;
+    height: 2.5rem;
+    font-size: 17px;
     font-family: Roboto, sans-serif;
     font-weight: 600;
     border-radius: 5px;
@@ -186,7 +284,7 @@ main .primary-content a{
     padding: 2px;
     display: grid;
     align-items: center;    
-
+    margin: 3.0rem auto;
     
 
     
@@ -210,10 +308,11 @@ main .primary-main a:hover{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: white;
     justify-content: space-between;
-    height: 390px;
-    width: 100vw;
+    height: 55vh;
+    width: 100%;
     position: relative;
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: -20px;
     
     
 }
@@ -230,7 +329,7 @@ main .primary-main a:hover{
 
 .content-secundary img {
     width: 350px;
-    height: 250x;
+    height: 250px;
 }
 
 .content-secundary h2 {
@@ -258,12 +357,13 @@ main .primary-main a:hover{
     background-color: black;
     width: 100%;
     max-height: 700px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     font-family: 'Merriweather', sans-serif;
     font-size: 18px;
     color: white;
     position: relative;
     margin-top: 5%;
+    
 
 }
 
@@ -280,7 +380,7 @@ main .primary-main a:hover{
 
 .context-title-3 .context-3 h2{
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 16px;
     
 
 }
@@ -288,7 +388,7 @@ main .primary-main a:hover{
 
 .context-title-3 .context-3 h3{
     color: #E49C15;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
     
     
@@ -318,6 +418,9 @@ main .primary-main a:hover{
 
 .segments-context .group-image{
     text-align: center;
+    display: block;
+    align-items: center;
+    
 }
 
 /*****COMEÇANDO CONTEXTO 4 - SERRALHERIA ******/
@@ -326,11 +429,17 @@ main .primary-main a:hover{
     width: 100%;
     background-color: white;
     font-family: 'Merriweather', sans-serif;
+    padding: 5px;
+    
+
 }
 
 .context-4{
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .context-4 h2{
@@ -372,10 +481,12 @@ color: #E49C15;
 
 .differentials-main {
     width: 100%;
-    max-height: 900px;
+    height: 120vh;
     background-color: black;
     color: white;
     text-align: center;
+    
+    
     
 }
 
@@ -389,6 +500,7 @@ color: #E49C15;
     max-height: 900px;
     position: relative;
     margin-top: 20px;
+    
     
 }
 
@@ -466,24 +578,128 @@ color: #E49C15;
 
 
 
-/****CONFIGURANDO RESPONSIVIDADE ****/
 
-@media (max-width: 700px){
-    #img-logo{
-        width: 150px;
-        height: 125px;
-        display: block;
-        margin-left: 50%;
+/** === PÁGINA SERRALHERIA === */
+
+
+
+
+
+
+
+
+
+
+/****CONFIGURANDO RESPONSIVIDADE ****/
+@media screen and (max-width: 900px){
+    .primary-image{
+        display: none;
+    }
+    
+
+    .content-secundary{
+       display: block;
+       height: 130vh;
+
     }
 
-    .primary-image img {
-        width:  15.6rem;
-       
+    .content-secundary-text h2{
+        font-size: 18px;
+        margin: 20px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+    .segments-context img{
+        width: 80px;
+        height: 80px;
+
+        align-items: center;
+        
+
+    }
+    
+
+    .group-image {
+        margin: -5px
+    }
+
+    .group-image img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .group-image h4 {
+        font-size: 12px;
+    }
+
+    #alarme{
+        position: relative;
+        top: 20px;
+    }
+    #alarme-title {
+        position: relative;
+        top: 20px;
+    }
+
+
+    
+    /*==HISTÓRIA==*/
+    .context-4{
+        text-align: center;
+    }
+
+    .context-4 {
+        padding: 10px;
+        
+    }
+
+    .context-4 p{
+        font-size: 15px;
+
+        
+
+    }
+
+    .context-4 img{
+        width: 20.6rem;
+        height: 16.8rem;
+        display: block;
+        align-items: center;
+        
+    }
+
+    #team{
+        display: none;
+    }
+
+    /*=== DIFERENCIAIS ===*/
+    .differentials-main{
+        height: 150vh;
+    }
+    .grid-differentials{
+        display: block;
+        
+    }
+
+    .differentials-grid{
+        width: 280px;
+        margin: 30px;
+        
+    }
+
+    .border-radius-differentials{
+        margin-bottom: 80px;
     }
 
     
 
-
-
-  
+    .differentials-grid p{
+        display: block;
+        
+    }
+    
 }

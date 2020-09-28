@@ -21,6 +21,9 @@ nunjucks.configure("views", {
 
 })
 
+
+
+
 //Config body parser
 server.use(bodyParser.urlencoded({extended: false}))
 server.use(bodyParser.json())
@@ -78,9 +81,13 @@ const transporter = nodemailer.createTransport({
 });
 
 
+
+
 server.listen(5000, function(){
     console.log("server is running");
 });
+
+
 
 
 

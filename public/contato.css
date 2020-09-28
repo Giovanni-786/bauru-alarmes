@@ -3,73 +3,20 @@
 
 
 *{
-    margin: 0;
-    padding: 0;
-    bottom: 0;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
 }
 
 
-body{
-    font-family: Roboto, sans-serif;
-}
-
-header{
-    width: 100%;  
-
-
-}
-
-header .primary-nav{
-    border: 2px solid  #f6f7f9;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 6vh;
-    display: flex;
-    background-color:  #fff;
-    align-items: center;
-    
-    
-
-}
-
-#img-logo{
-    width: 200px;
-    height: 35px;
-    
-}
-
-header .primary-nav a {
-    margin: 10px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    transition: 300ms;
-    padding: 10px;
-    
-    
-}
-
-header .primary-nav a:hover {
-    font-weight: 700;
-    
-    
-    
-}
-
-.primary-nav img{
-    display: block;
-    right: 20vw;
-    position: relative;
-}
 
 /****COMEÇANDO CONTEÚDO CONTATO ******/
 
 .contact-main{
   display: grid;
   margin: 3.6rem;
-  grid-template-columns: 2fr 1fr;  
+  grid-template-columns: 2fr 1fr; 
+  padding: 5%; 
  
 }
 
@@ -83,7 +30,7 @@ header .primary-nav a:hover {
 }
 
 .image-send img {
-  width: 49.2rem;
+  width: 35.2rem;
   height: 500px;
 
 }
@@ -95,7 +42,7 @@ header .primary-nav a:hover {
   display: grid;
   align-items: center;
   justify-items: left;
-  margin: 3.6rem;
+  margin: 2.0rem;
 }
 
 
@@ -202,14 +149,16 @@ header .primary-nav a:hover {
 
 textarea {
   resize: none;
+  width: 18.8rem;
+  height: 10.5rem;
+  padding: 15px;
 }
 
 
 button {
-  width: 24.5rem;
-  font-size: 1.6rem;
+  width: 21.5rem;
   height: 2.6rem;
-  font-size: 18px;
+  font-size: 15px;
   font-family: Roboto, sans-serif;
   font-weight: 600;
   border-radius: 5px;
@@ -219,6 +168,7 @@ button {
   text-decoration: none;
   color: white;
   margin-top: 1.6rem;
+  cursor: pointer;
 }
 
 button:hover {
@@ -257,5 +207,47 @@ iframe {
   position: absolute;
   width: 60vw; 
   height: 50vh;
+
+}
+
+
+@media screen and (max-width: 900px){
+    .contact-main{
+      display: flex;
+      flex-direction: column-reverse;
+
+    }
+    .contact-main img {
+      width: 23.2rem;
+      height: 300px;
+    }
+
+    .form-contact input{
+      width: 300px;
+
+    }
+
+    .iframe-localization h1{
+      font-size: 15px;
+
+    }
+
+    .iframe-localization p {
+      font-size: 18px;
+      
+    }
+
+   
+
+}
+
+
+
+@media screen and (max-width: 900px){
+
+  .contact-main{
+   padding: 0;
+
+  }
 
 }
