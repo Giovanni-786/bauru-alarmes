@@ -1,0 +1,211 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Merriweather&display=swap';
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+/*=== Começando conteúdo === */
+
+.serr-introduction{
+    display: flex;
+    width: 90vw;
+    height: auto;
+    margin: 11% auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.serr-introduction-title{
+    margin: 1.6rem;
+    padding: 0.8rem;
+    
+
+}
+
+.serr-introduction-title h3{
+    font-size: 25px;
+}
+
+.serr-introduction-title h1 {
+    font-size: 28px;
+}
+
+.serr-introduction-title p {
+    font-size: 17px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+
+.serr-introduction-image img {
+
+    width: 500px;
+
+    height: 280px;
+
+}
+
+
+.serr-introduction-link {
+    position: absolute;
+    
+}
+
+.serr-introduction-link a{
+    width: 13.9rem;
+    height: 2.2rem;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+    transition: 400ms;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: grid;
+    align-items: center;    
+    margin: 0 14.0rem 1.6rem;
+    
+}
+.serr-introduction-link a:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+/*=== Segmentos === */
+
+.description{
+    text-align: center;
+}
+
+.serr-main-title h1{
+    font-size: 25px;
+    opacity: 0.8;
+}
+
+.serr-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+    background-color: #F9F9F9;
+    border-radius: 10px;
+   
+}
+
+.serr-group-image img{
+    width: 80px;
+    height: 80px;
+    margin-top: 35px;
+}
+
+
+.serr-text-final{
+    text-align: center;
+    width: 50%;
+    margin: 10% auto;
+    font-weight: 700;
+    
+}
+
+
+.serr-text-final h3 {
+    font-family: Merriweather, sans-serif;
+}
+
+.serr-text-final img {
+    margin-top: 10%;
+    width: 15.6rem;
+    height: 10.6rem;
+}
+
+
+
+/* === responsividade === */
+
+
+
+/****CONFIGURANDO RESPONSIVIDADE ****/
+@media screen and (max-width: 900px){
+    .serr-introduction{
+        flex-direction: column-reverse;
+        align-items: center;
+        
+        
+    }
+
+
+    .serr-introduction-title p{
+        margin-bottom: 1.8rem;
+        
+    }
+
+
+    .serr-introduction-image img {
+        width: 350px;
+        max-width: 800px;
+        height: 280px;
+        
+    }
+
+    .serr-introduction-link{
+        top: 94%;
+        
+    }
+
+
+    .serr-introduction-link a {
+        height: 6vh;
+        font-size: 15px;
+    }
+
+    /*conteúdo principal*/
+
+    .serr-main-title h1{
+        font-size: 20px;
+
+    }
+
+
+    .serr-main{
+        
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .serr-text-final{
+        width: 80vw;
+    }
+
+    .serr-text-final h3{
+        font-size: 18px;
+    }
+
+
+    .serr-group-image img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .serr-group-image h3 {
+        font-size: 15px;
+    }
+
+}

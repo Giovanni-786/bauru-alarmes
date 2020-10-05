@@ -48,8 +48,8 @@ server.get("/serralheria", function(req, res){
 server.post("/contato", function(req, res){
     const message = {
         subject: req.body.assunto,
-        from: 'Giovanni Lima <giovanni.lima786@gmail.com>',
-        to: 'giovanni.lima786@gmail.com',
+        from: 'Giovanni Lima <contato.site.baurualarmes@gmail.com>',
+        to: 'contato.site.baurualarmes@gmail.com',
         html: `E-mail: <b> ${req.body.email} </b>
         <br>Nome completo: ${req.body.nome}</br>
         <br>${req.body.texto}</br>`
@@ -60,6 +60,7 @@ server.post("/contato", function(req, res){
         if(error){
             return res.status(400).send('Falhou');
         }
+        
         return res.render("contato");
         
     })

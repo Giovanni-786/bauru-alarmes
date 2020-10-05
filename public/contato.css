@@ -216,6 +216,7 @@ iframe {
       display: flex;
       flex-direction: column-reverse;
 
+
     }
     .contact-main img {
       width: 23.2rem;
@@ -247,7 +248,14 @@ iframe {
 
   .contact-main{
    padding: 0;
+   margin: 0.8rem;
+   
 
   }
 
+  .contact-main textarea{
+    width: 16.8rem;
+    height: 10.5rem;
+
+  }
 }

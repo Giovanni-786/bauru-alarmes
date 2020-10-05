@@ -10,11 +10,6 @@
 }
 
 
-/* Remover espaço em brando lateral no mobile */
-html, body{
-    overflow-x: hidden !important; 
-}
-
 
 body{
     font-family: Roboto, sans-serif;
@@ -25,9 +20,10 @@ header{
     height: 10vh;
     width: 100%;  
     padding: 1px 20px;
-    top:20px;
+    margin-top: 2.6rem;
     z-index: 999;
-    position: absolute;
+    position: relative;
+    
 
     
     
@@ -579,12 +575,45 @@ color: #E49C15;
 
 
 
-/** === PÁGINA SERRALHERIA === */
 
 
 
+/* === FOOTER === */
 
 
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+}
+
+.footer-content{
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.footer-content p {
+    font-weight: 600;
+    margin: 20px;
+}
+
+.footer-logo img{
+    width: 170px;
+    height: 20px;
+    margin: 20px;
+
+
+}
+
+.footer-socials img{
+    width: 45px;
+    height: 40px;
+    
+    margin: 10px;
+    
+
+}
 
 
 
@@ -592,6 +621,12 @@ color: #E49C15;
 
 /****CONFIGURANDO RESPONSIVIDADE ****/
 @media screen and (max-width: 900px){
+    
+    html, body{
+        overflow-x: hidden;
+        
+    }
+    
     .primary-image{
         display: none;
     }
@@ -678,7 +713,7 @@ color: #E49C15;
 
     /*=== DIFERENCIAIS ===*/
     .differentials-main{
-        height: 150vh;
+        height: auto;
     }
     .grid-differentials{
         display: block;
