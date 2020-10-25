@@ -180,6 +180,9 @@ main .primary-main{
     display: flex;
     color: black;
     margin-top: 50px;
+    align-items: center;
+    align-self: center;
+
 
 
     
@@ -187,8 +190,8 @@ main .primary-main{
 
 main .primary-content{
     position: relative;
-    height: 21.6rem;
-    top: 10%;
+    height: 20.6rem;
+    top: 1%;
     color: black;
     
 
@@ -224,7 +227,7 @@ main .primary-image {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    padding: 10%;
+    padding: 20%;
     
     
 }
