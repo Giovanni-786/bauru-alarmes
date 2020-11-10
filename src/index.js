@@ -45,6 +45,10 @@ server.get("/serralheria", function(req, res){
 
 });
 
+
+
+
+
 server.post("/contato", function(req, res){
     const message = {
         subject: req.body.assunto,
@@ -61,9 +65,12 @@ server.post("/contato", function(req, res){
             return res.status(400).send('Falhou');
         }
         
-        return res.render("contato");
+        return res.render("about");
         
     })
+
+   
+  
         
 });
 
@@ -86,7 +93,4 @@ var port = process.env.PORT || 3000;
 server.listen(port, function () {
     console.log('Umbler listening on port %s', port);
 });
-
-
-
 
